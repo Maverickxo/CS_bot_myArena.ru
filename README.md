@@ -1,4 +1,8 @@
 Телеграмм бот для управления сервером Counter-Strike 1.6 на хостинге MyArena.ru
+
+
+
+
 бот полностью готов к работе 
 создайте файл config.py 
 API_TOKEN = 'TELEGRAM_BOT_TOKEN'
