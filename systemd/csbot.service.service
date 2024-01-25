@@ -6,8 +6,8 @@ After=network.target
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/root/bot_kraft/cs_bot
-ExecStart=/root/bot_kraft/cs_bot/venv/bin/python3 /root/bot_kraft/cs_bot/cs_bot_kraft.py
+WorkingDirectory=/root/bot_/cs_bot
+ExecStart=/root/bot_/cs_bot/venv/bin/python3 /root/bot_/cs_bot/cs_bot_kraft.py
 RestartSec=10
 Restart=always
 
