@@ -129,3 +129,14 @@ class MyApiArena:
         except requests.exceptions.RequestException as e:
             print(f"Ошибка запроса к API: {e}")
             return None
+
+    def change_bot_server(self, query_param, cmd):
+        url = f"{self.base_url}?query={query_param}&cmd={cmd}&token={self.token}"
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+            return response.json()
+
+        except requests.exceptions.RequestException as e:
+            print(f"Ошибка запроса к API: {e}")
+            return None
